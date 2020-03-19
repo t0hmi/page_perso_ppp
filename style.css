@@ -1,0 +1,349 @@
+html{
+ overflow-x: hidden;   
+}
+/*------ HEADER --------*/
+
+header{
+ background-color: rgb(127,176,254);   
+width: 100%;
+}
+.nav-item{
+ margin: 1em;
+    width: 8em;
+}
+
+nav .navbar-nav li a{
+  color: white ;
+  }
+
+nav .navbar-nav li{
+    
+    font-size: 1.3em;
+    text-align: center;
+  }
+.nav-link{
+    border: solid rgb(127,176,254) 2px ;
+    border-radius: 15px;
+    
+   
+}
+header button{
+    background-color: rgb(127,176,254);
+    border: none;
+}
+.nav-link:hover{
+    
+    animation-duration: 1s;
+    animation-name: animationHeader;
+    animation-fill-mode: forwards;
+}
+/*------ ACCEUIL -----------*/
+.bienvenue h1{
+ font-size: 6em;
+}
+.bienvenue h2{
+ font-size: 3em;   
+}
+.bienvenue h3{
+ font-size: 2em;   
+}
+.bienvenue h1,h2,h3{
+    text-align: center;
+}
+
+.bienvenue #btn{
+    margin: 3em; 
+    padding: 1em;
+    border-radius: 5px;
+    background: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
+    color: white;
+}
+
+.bienvenue #btn:hover{
+       
+    animation-duration: 1s;
+    animation-name: animationButton;
+    animation-fill-mode: forwards;
+    }
+
+
+/*------ QUI SUIS-JE ---------*/
+section{
+ margin-top: 4em;
+
+}
+section>h1{
+ margin-bottom: 2em;
+    padding: 5px;
+    border-bottom: rgb(127,176,254) solid 3px;
+    text-align: center;
+}
+.quiSuisJe div:first-child{
+    background:   linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
+    box-shadow: #000000  0 5px 10px;
+    font-weight: bold;
+
+}
+
+.quiSuisJe div:first-child p{
+ padding: 1em;
+font-size: 1.5em;
+}
+
+
+#LIGNE1,#LIGNE2,#LIGNE3,#LIGNE4,#LIGNE5,#LIGNE6,#LIGNE7,#LIGNE8,#LIGNE9,#LIGNE10,#LIGNE11{
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-name: animSvg;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+    
+}
+#LIGNE1{
+    animation-delay: 0.5s;
+}
+#LIGNE2{
+    animation-delay: 1s;   
+}
+#LIGNE3{
+    animation-delay: 1.5s;   
+}
+#LIGNE4{
+    animation-delay: 2s;
+}
+#LIGNE5{
+    animation-delay: 2.5s;   
+}
+#LIGNE6{
+    animation-delay: 3s;   
+}
+#LIGNE7{
+    animation-delay: 3.5s;
+}
+#LIGNE8{
+    animation-delay: 4s;   
+}
+#LIGNE9{
+    animation-delay: 4.5s;   
+}
+#LIGNE10{
+    animation-delay: 5s;
+}
+#LIGNE11{
+    animation-delay: 5.5s;   
+}
+
+
+/*------- MON PARCOURS -----*/
+section:nth-child(4){
+ margin-top: 6em;   
+}
+.conteneur{
+        
+     background:   linear-gradient(to right, rgb(108,70,200), rgb(108,176,255) );
+    box-shadow: #000000  0 5px 10px;
+}
+
+
+
+
+
+.timeline
+{
+    position: relative;
+    top: 4em;
+    width: 800px;
+    height: auto;
+    border-color: yellow;
+    box-sizing: border-box;
+}
+
+.timeline .liTime
+{
+    position:relative;
+    list-style: none;
+    margin-top: 0px;
+}
+.content
+{
+    position: relative;
+    min-height: 60px;
+    padding: 0 20px 20px 30px;
+    height: 200px;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 2px;
+    
+
+    
+
+}
+
+.timeline .liTime:last-child .content
+{
+    border-left: 2px solid transparent;
+}
+.span
+{
+    margin-top: 0px;
+    position: absolute;
+    top: -8px;
+    left: -20px;  
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    z-index: 10;
+    font-family: "robotobold";
+    font-size: 0.9em;
+}
+
+.liTime:hover .span
+{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127,176,254);
+    color: black;
+    box-shadow: rgb(127,176,254) 0 0 30px;
+
+}
+
+
+
+
+/*-------- COMPETENCES ------------*/
+section:nth-child(5){
+ margin-top: 4em;   
+}
+.crea,.logi,.soft,.devl{
+ width:   350px;
+ height: 350px;
+ 
+
+}
+.crea, .logi{
+       background-image: linear-gradient(to right, rgb(108,70,200), rgb(108,176,255) );
+}
+
+.soft,.devl{
+    background-image: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
+}
+.crea h1,.logi h1,.soft h1,.devl h1{
+    color : white;  
+    font-weight: bold;
+    text-align: center;
+}
+.crea p,.logi p,.soft p,.devl p{
+    padding: 1em;
+    font-size: 1.3em;
+    
+}
+.crea{
+    background-color: white;
+    box-shadow: 3px 3px 9px rgb(108,176,255), -3px -3px 9px rgb(108,70,200);
+}
+.devl{
+    background-color: white;
+    box-shadow: -3px 3px 9px rgb(108,176,255), 3px -3px 9px rgb(108,70,200);
+}
+.soft{
+    background-color: white;
+    box-shadow: -3px -3px 9px rgb(108,176,255), 3px  3px 9px rgb(108,70,200);
+}
+.logi{
+    background-color: white;
+    box-shadow: 3px -3px 9px rgb(108,176,255), -3px 3px 9px rgb(108,70,200);
+}
+#lastLineSkills{
+ margin-top: 3em;   
+}
+/*---------- PROJET ------------*/
+section:nth-child(6){
+    margin-top: 4em;
+   
+}
+section:nth-child(6) .row{
+    margin-top: 2em;
+     background-image: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
+    padding: 2em;   
+}
+
+/*----------- FOOTER ------------*/ 
+footer{
+    height: 100%;
+}
+footer div:first-child{
+    height: 9em;
+     background-color:rgb(108,176,255);
+}
+footer div:last-child{
+ background-color:rgb(108,70,200); 
+    height: 4em;
+    box-shadow: 0px -2px 20px #000000;
+}
+footer div:last-child p{
+ color: white;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+/*--------------------------------------*/
+@keyframes animSvg{
+ from{
+     opacity: 0;
+     
+ }to{
+     opacity: 1;
+ }  
+}
+@keyframes animationButton{
+    from{
+            background: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
+    }to{
+            background:rgb(108,176,255);
+        
+    }
+}
+
+
+@keyframes animationHeader{
+ from{
+     border-color: rgb(127,176,254);
+     color: white;
+    background-color: rgb(127,176,254);
+ 
+ }
+    to{
+   
+        color: rgb(127,176,254);
+        background-color: white;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 990px) {
+    .nav-link:hover{
+    animation: none;
+}   
+    nav .navbar-nav li{
+        text-align: left;
+    }  
+    
+    .devl{
+     margin-top: 3em;   
+    }
+    
+    .soft{
+     margin-top: 3em;   
+    }
+}
+
+
