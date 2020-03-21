@@ -1,10 +1,16 @@
+/*---- POLICE ----*/
+
+
+
 html{
  overflow-x: hidden;   
+ scroll-behavior: smooth;
 }
+
 /*------ HEADER --------*/
 
 header{
- background-color: rgb(127,176,254);   
+ background-color: rgb(127,176,254);
 width: 100%;
 }
 .nav-item{
@@ -58,7 +64,14 @@ header button{
     background: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
     color: white;
 }
+.bienvenue #btn a{
+    display: block;
+ text-decoration: none;
+ color: white;
+    height: 100%;
+    width: 100%;
 
+}
 .bienvenue #btn:hover{
        
     animation-duration: 1s;
@@ -66,11 +79,21 @@ header button{
     animation-fill-mode: forwards;
     }
 
-
+.bienvenue #btn:hover a {
+ text-decoration: none;
+    text-shadow: 5px 5px 10px black;
+}
+.bienvenue #btn a:active{
+    opacity: 0.5;
+    text-decoration: underline;
+}
 /*------ QUI SUIS-JE ---------*/
 section{
  margin-top: 4em;
 
+}
+section:nth-child(3) svg{
+ margin-right: 1em;   
 }
 section>h1{
  margin-bottom: 2em;
@@ -81,15 +104,35 @@ section>h1{
 .quiSuisJe div:first-child{
     background:   linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
     box-shadow: #000000  0 5px 10px;
-    font-weight: bold;
 
 }
 
 .quiSuisJe div:first-child p{
- padding: 1em;
-font-size: 1.5em;
+ padding: 1.5em;
+ font-size: 1.5em;
+
 }
 
+.quiSuisJe div:first-child p span{
+    display: block;
+ text-align: center;
+    margin-top: 1em;
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px black;
+}
+.quiSuisJe div:first-child p span a:visited, .quiSuisJe div:first-child p span a:link {
+    text-decoration: none;
+    
+    color: white;
+    margin:1em;
+
+    
+    
+}
+.quiSuisJe div:first-child p span a:hover{
+    color: black;
+}
 
 #LIGNE1,#LIGNE2,#LIGNE3,#LIGNE4,#LIGNE5,#LIGNE6,#LIGNE7,#LIGNE8,#LIGNE9,#LIGNE10,#LIGNE11{
     opacity: 0;
@@ -139,23 +182,21 @@ font-size: 1.5em;
 section:nth-child(4){
  margin-top: 6em;   
 }
+section:nth-child(4) svg{
+ margin-left: 1em;   
+}
+
 .conteneur{
         
      background:   linear-gradient(to right, rgb(108,70,200), rgb(108,176,255) );
     box-shadow: #000000  0 5px 10px;
 }
-
-
-
-
-
 .timeline
 {
     position: relative;
     top: 4em;
     width: 800px;
     height: auto;
-    border-color: yellow;
     box-sizing: border-box;
 }
 
@@ -174,12 +215,16 @@ section:nth-child(4){
     border-left-style: solid;
     border-left-color: black;
     border-left-width: 2px;
-    
-
-    
-
+}
+.content h3{
+ color: white; 
+ text-align: left;
+text-shadow: 4px 4px 4px black;   
 }
 
+.content p{
+ font-size: 1.5em;     
+}
 .timeline .liTime:last-child .content
 {
     border-left: 2px solid transparent;
@@ -195,11 +240,11 @@ section:nth-child(4){
     line-height: 40px;
     text-align: center;
     background-color: black;
-    color: white;
     border-radius: 50%;
     z-index: 10;
-    font-family: "robotobold";
     font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(108,176,255);
 }
 
 .liTime:hover .span
@@ -220,47 +265,72 @@ section:nth-child(4){
 section:nth-child(5){
  margin-top: 4em;   
 }
-.crea,.logi,.soft,.devl{
- width:   350px;
- height: 350px;
- 
+.develo img,.crea img, .soft img, .logi img{
+ position: relative;
+}
+.develo p,.crea p,.soft p, .logi p{
+   font-weight: 500;
+}
+.crea h1{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+      font-size: 2em;  
+    color: white;
+    text-shadow: 4px 4px 5px black;
+}
+.crea p{
+      position: absolute;
+    top: 40%;
+    left: 25%;
+    padding-right: 10em;  
+}
 
+
+
+.develo h1{
+ position: absolute;
+    top:25%;
+    left: 25%;
+    font-size: 2em;  
+    color: white;
+    text-shadow: 4px 4px 5px black;
 }
-.crea, .logi{
-       background-image: linear-gradient(to right, rgb(108,70,200), rgb(108,176,255) );
+.develo  p{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    padding-right: 10em;
+}
+.soft h1{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 2em;  
+    color: white;
+    text-shadow: 4px 4px 5px black;
+}
+.soft p{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+     padding-right: 9em;
 }
 
-.soft,.devl{
-    background-image: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
+.logi h1{
+ position: absolute;
+    top: 20%;
+    left: 25%;
+     font-size: 2em;  
+    color: white;
+    text-shadow: 4px 4px 5px black;
 }
-.crea h1,.logi h1,.soft h1,.devl h1{
-    color : white;  
-    font-weight: bold;
-    text-align: center;
-}
-.crea p,.logi p,.soft p,.devl p{
-    padding: 1em;
-    font-size: 1.3em;
-    
-}
-.crea{
-    background-color: white;
-    box-shadow: 3px 3px 9px rgb(108,176,255), -3px -3px 9px rgb(108,70,200);
-}
-.devl{
-    background-color: white;
-    box-shadow: -3px 3px 9px rgb(108,176,255), 3px -3px 9px rgb(108,70,200);
-}
-.soft{
-    background-color: white;
-    box-shadow: -3px -3px 9px rgb(108,176,255), 3px  3px 9px rgb(108,70,200);
-}
-.logi{
-    background-color: white;
-    box-shadow: 3px -3px 9px rgb(108,176,255), -3px 3px 9px rgb(108,70,200);
-}
-#lastLineSkills{
- margin-top: 3em;   
+
+.logi p{
+ position: absolute;
+    top: 35%;
+    left: 25%;
+    padding-right: 9em;
 }
 /*---------- PROJET ------------*/
 section:nth-child(6){
@@ -272,22 +342,36 @@ section:nth-child(6) .row{
      background-image: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
     padding: 2em;   
 }
+section:nth-child(6) .row div img{
+ margin: 1em;
+display: block;
+
+}
+
 
 /*----------- FOOTER ------------*/ 
 footer{
     height: 100%;
 }
 footer div:first-child{
-    height: 9em;
-     background-color:rgb(108,176,255);
+    height: 15em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+   background: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) ); 
 }
 footer div:last-child{
- background-color:rgb(108,70,200); 
     height: 4em;
-    box-shadow: 0px -2px 20px #000000;
+    margin-top: 2em;
+
 }
+footer div:first-child>p{
+    text-align: center;
+
+}
+    
+
 footer div:last-child p{
- color: white;
+    color: black;
     font-weight: bold;
     padding-top: 1em;
 }
@@ -337,13 +421,10 @@ footer div:last-child p{
         text-align: left;
     }  
     
-    .devl{
-     margin-top: 3em;   
-    }
-    
-    .soft{
-     margin-top: 3em;   
-    }
+    .develo p,.crea p,.soft p, .logi p{
+        padding-right: 7em;
+        font-size: 0.8em;
+}
 }
 
 
