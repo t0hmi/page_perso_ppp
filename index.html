@@ -6,6 +6,7 @@
     <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
     <!-- déclaration du fichier CSS de Bootstrap -->
@@ -13,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/9fc8294f3b.js" crossorigin="anonymous"></script>
 </head>
 <header>
     <nav class="navbar navbar-expand-lg ">
@@ -55,22 +57,22 @@
         
         <!--- Image Portfolio ---->
         <div class="col-lg-6 order-lg-last order-sm-last order-first">
-            <img src="images/Portfolio.png" class="img-fluid" width="800" height="800">
+            <img src="images/Portfolio.png" class="img-fluid" width="800" height="800" id="portfolio">
         </div>
         
     </section>
         
     <section>
         <h1 class="col-lg-3" id="qui">Qui suis-je ?</h1>
-        <div class="row quiSuisJe">
-        <div class="col-lg-6">
-            <p >
-               Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.<br> <span>Télécharger mon CV :  <a href="#">ici</a></span>
+        <div class="row quiSuisJe txt">
+        <div class="col-lg-6 d-flex">
+            <p class="align-self-center ">
+              Étudiant à l'IUT de Lannion, c'est dans le développement et la conception web que je souhaite évoluer.Je suis quelqu'un de motivé et de serviable,qui aime le travail bien fait et l'esprit d'équipe. De par ma bonne humeur et mes compétences en informatique ainsi qu'en design, je suis un bon élément sur les projets web en équipe.<br> <span>Télécharger mon CV :  <a href="images/thomas_hamon_cv_web.pdf">ici</a></span>
             </p>    
         </div>
         <div class="col-lg-5 offset-lg-1 align-self-center">
             
-<svg width="1042" height="555" viewBox="0 0 1042 555" fill="none" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+<svg width="1042" height="555" viewBox="0 0 1042 555" fill="none" xmlns="http://www.w3.org/2000/svg" class=" img-fluid">
 <rect width="1042" height="555" fill="#FFFFFF"/>
 <g id="undraw_programming_2svr 1">
 <g clip-path="url(#clip0)">
@@ -177,14 +179,14 @@
     </section>
     <section>
         <h1 class="col-lg-3 offset-lg-9" id="parcours">Mon parcours</h1>
-    <div class="row">
+    <div class="row txt" id="yo">
         <div class="col-lg-5 align-self-center">
             
             
-<svg width="1135" height="710" viewBox="0 0 1135 710" fill="none" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
-<rect width="1135" height="710" fill="white"/>
+<svg width="1135" height="710" viewBox="0 0 1135 710" fill="none" xmlns="http://www.w3.org/2000/svg" class="svgPar img-fluid" >
+<rect width="1135" height="710" fill="white" />
 <g id="background">
-<path id="Vector" d="M1118.26 286.728C1076.63 123.042 932.801 4.88347 763.971 0.144239C674.716 -2.36125 580.795 27.2407 512.413 130.829C390.173 316.004 519.925 443.966 610.384 504.77C654.087 534.206 693.466 569.599 727.38 609.926C788.482 682.433 906.029 772.534 1046.02 631.36C1147.49 529.036 1145.99 395.759 1118.26 286.728Z" fill="#7FB0FE" fill-opacity="0.25"/>
+<path id="Vector" d="M1118.26 286.728C1076.63 123.042 932.801 4.88347 763.971 0.144239C674.716 -2.36125 580.795 27.2407 512.413 130.829C390.173 316.004 519.925 443.966 610.384 504.77C654.087 534.206 693.466 569.599 727.38 609.926C788.482 682.433 906.029 772.534 1046.02 631.36C1147.49 529.036 1145.99 395.759 1118.26 286.728Z" fill="#7FB0FE" fill-opacity="0.25" />
 <path id="Vector_2" d="M735.665 178.436L635.495 278.606L636.909 280.02L737.079 179.85L735.665 178.436Z" fill="#3F3D56"/>
 <path id="Vector_3" d="M606.454 291.405H438.226V293.405H606.454V291.405Z" fill="#3F3D56"/>
 <path id="Vector_4" d="M407.521 305.04L313.43 399.131L314.844 400.545L408.935 306.454L407.521 305.04Z" fill="#3F3D56"/>
@@ -201,26 +203,26 @@
 <path id="Vector_15" d="M453.779 531.81C463.734 531.81 471.804 523.739 471.804 513.784C471.804 503.829 463.734 495.759 453.779 495.759C443.824 495.759 435.754 503.829 435.754 513.784C435.754 523.739 443.824 531.81 453.779 531.81Z" fill="#7FB0FE" fill-opacity="0.25"/>
 </g>
 <g id="undraw_destinations_fpv7 1">
-<g id="1erTrait">
+<g id="perTrait">
 <path id="Vector_16" d="M146.932 395.039C145.077 391.398 143.353 387.638 141.808 383.861L143.659 383.103C145.184 386.829 146.884 390.539 148.714 394.131L146.932 395.039ZM137.628 372.296C136.401 368.403 135.323 364.409 134.422 360.426L136.373 359.984C137.261 363.914 138.325 367.854 139.536 371.695L137.628 372.296ZM132.21 348.33C131.644 344.294 131.237 340.179 131.002 336.097L132.999 335.981C133.23 340.009 133.632 344.07 134.191 348.052L132.21 348.33ZM132.793 323.85L130.794 323.803C130.89 319.715 131.156 315.588 131.583 311.537L133.572 311.747C133.15 315.744 132.888 319.816 132.793 323.85V323.85ZM135.34 299.75L133.375 299.377C134.137 295.366 135.076 291.338 136.166 287.405L138.094 287.939C137.018 291.82 136.092 295.793 135.34 299.75V299.75ZM141.818 276.397L139.942 275.705C141.356 271.874 142.949 268.054 144.677 264.35L146.49 265.196C144.785 268.849 143.213 272.618 141.818 276.397V276.397ZM415.722 270.215C414.159 266.508 412.419 262.817 410.551 259.244L412.323 258.318C414.217 261.939 415.98 265.68 417.565 269.438L415.722 270.215ZM152.071 254.421L150.335 253.429C152.36 249.886 154.56 246.381 156.873 243.012L158.521 244.144C156.24 247.468 154.069 250.926 152.071 254.421ZM404.491 248.737C402.337 245.335 400.015 241.98 397.587 238.764L399.184 237.559C401.644 240.819 403.998 244.22 406.181 247.667L404.491 248.737ZM165.794 234.432L164.244 233.169C166.824 230.003 169.566 226.907 172.395 223.964L173.837 225.349C171.045 228.253 168.339 231.309 165.794 234.432ZM389.889 229.39C387.207 226.384 384.367 223.452 381.448 220.677L382.827 219.227C385.784 222.04 388.663 225.012 391.381 228.058L389.889 229.39ZM182.595 216.956L181.272 215.457C184.332 212.756 187.542 210.148 190.814 207.706L192.01 209.308C188.782 211.718 185.615 214.291 182.595 216.956ZM372.323 212.683C369.186 210.155 365.905 207.725 362.572 205.464L363.695 203.808C367.073 206.101 370.398 208.563 373.578 211.125L372.323 212.683ZM202.018 202.46L200.957 200.765C204.42 198.599 208.013 196.553 211.637 194.682L212.554 196.46C208.979 198.305 205.435 200.324 202.018 202.46ZM352.262 199.07C348.748 197.087 345.113 195.229 341.458 193.548L342.294 191.73C345.999 193.435 349.683 195.318 353.245 197.327L352.262 199.07ZM223.547 191.35L222.779 189.503C226.548 187.938 230.428 186.512 234.31 185.264L234.921 187.169C231.092 188.399 227.265 189.806 223.547 191.35ZM330.235 188.937C326.45 187.563 322.559 186.331 318.669 185.275L319.193 183.345C323.136 184.415 327.081 185.664 330.918 187.057L330.235 188.937ZM246.612 183.943L246.161 181.994C250.132 181.074 254.197 180.307 258.24 179.717L258.529 181.696C254.54 182.279 250.531 183.035 246.612 183.943V183.943ZM306.839 182.584C302.886 181.856 298.845 181.283 294.83 180.881L295.029 178.891C299.099 179.298 303.194 179.879 307.201 180.618L306.839 182.584ZM270.591 180.438L270.465 178.442C274.533 178.185 278.681 178.094 282.756 178.168L282.72 180.168C278.695 180.094 274.606 180.185 270.591 180.438V180.438Z" fill="#3F3D56"/>
 </g>
 <g id="trait3">
 <path id="Vector_17" d="M409.55 175.423H407.55C407.55 173.422 407.585 171.391 407.655 169.388L409.654 169.457C409.585 171.438 409.55 173.445 409.55 175.423Z" fill="#3F3D56"/>
 <path id="Vector_18" d="M410.502 157.431L408.513 157.219C408.941 153.191 409.521 149.131 410.236 145.15L412.205 145.504C411.498 149.437 410.925 153.451 410.502 157.431ZM414.76 133.73L412.822 133.236C413.823 129.31 414.98 125.375 416.261 121.538L418.158 122.171C416.893 125.963 415.75 129.851 414.76 133.73V133.73ZM733.723 112.629C732.228 108.918 730.578 105.215 728.82 101.624L730.617 100.745C732.396 104.379 734.064 108.126 735.578 111.882L733.723 112.629ZM422.385 110.876L420.539 110.108C422.094 106.37 423.806 102.639 425.629 99.0184L427.416 99.9178C425.614 103.496 423.922 107.183 422.385 110.876V110.876ZM723.139 90.9979C721.128 87.5419 718.966 84.1127 716.711 80.806L718.363 79.679C720.646 83.0252 722.833 86.4949 724.867 89.992L723.139 90.9979ZM433.221 89.3509L431.503 88.3255C433.576 84.8529 435.805 81.4066 438.127 78.0828L439.767 79.2284C437.472 82.513 435.269 85.9188 433.221 89.3509H433.221ZM709.57 71.099C707.083 67.9598 704.454 64.8734 701.756 61.9251L703.23 60.5745C705.961 63.5579 708.622 66.6805 711.139 69.8568L709.57 71.099ZM447.02 69.6009L445.466 68.3411C448.017 65.1947 450.713 62.1019 453.479 59.1488L454.939 60.5159C452.205 63.4349 449.541 66.4915 447.02 69.6009ZM693.308 53.3309C690.4 50.578 687.359 47.8963 684.268 45.3597L685.535 43.8138C688.664 46.3797 691.741 49.0936 694.683 51.8788L693.308 53.3309ZM463.484 52.0194L462.125 50.5516C465.095 47.8021 468.202 45.1239 471.36 42.5921L472.611 44.1527C469.49 46.6551 466.419 49.3016 463.484 52.0194V52.0194ZM674.683 38.0531C671.415 35.7416 668.023 33.5199 664.601 31.4496L665.636 29.7386C669.099 31.8333 672.531 34.0814 675.837 36.4203L674.683 38.0531ZM482.274 36.9574L481.137 35.3119C484.467 33.013 487.922 30.8055 491.409 28.7499L492.424 30.4725C488.979 32.5042 485.564 34.6859 482.274 36.9574V36.9574ZM654.071 25.5858C650.506 23.7645 646.831 22.0516 643.147 20.4935L643.927 18.6517C647.654 20.2279 651.373 21.9618 654.981 23.8045L654.071 25.5858ZM503.012 24.7328L502.122 22.9418C505.745 21.143 509.479 19.453 513.222 17.9193L513.981 19.7699C510.282 21.2855 506.592 22.9554 503.012 24.7328V24.7328ZM631.885 16.202C628.102 14.9139 624.218 13.747 620.342 12.7338L620.848 10.7992C624.77 11.8241 628.701 13.0052 632.529 14.3085L631.885 16.202ZM525.275 15.6102L524.652 13.7098C528.496 12.4501 532.438 11.3138 536.368 10.3328L536.852 12.2733C532.968 13.2425 529.073 14.3651 525.275 15.6102L525.275 15.6102ZM608.581 10.1092C604.648 9.37923 600.639 8.78306 596.663 8.33677L596.886 6.34947C600.909 6.80113 604.967 7.40415 608.946 8.14247L608.581 10.1092ZM548.639 9.78013L548.296 7.80943C552.281 7.11558 556.344 6.55743 560.374 6.14976L560.575 8.13999C556.593 8.54232 552.577 9.09407 548.639 9.78011L548.639 9.78013ZM584.648 7.41978C580.643 7.25718 576.572 7.2357 572.598 7.35435L572.537 5.35535C576.56 5.23524 580.678 5.25623 584.73 5.42176L584.648 7.41978Z" fill="#3F3D56"/>
 </g>
-<g id="1erPoint">
+<g id="perPoint">
 <path id="Vector_19" d="M155.07 435.649C173.468 435.649 188.383 434.53 188.383 433.15C188.383 431.771 173.468 430.652 155.07 430.652C136.672 430.652 121.758 431.771 121.758 433.15C121.758 434.53 136.672 435.649 155.07 435.649Z" fill="#7FB0FE"/>
 <path id="Vector_20" d="M155.07 304.065C150.696 304.065 146.364 304.926 142.322 306.6C138.28 308.275 134.608 310.728 131.515 313.822C128.421 316.915 125.968 320.587 124.294 324.629C122.619 328.671 121.758 333.002 121.758 337.377C121.758 355.775 155.07 416.494 155.07 416.494C155.07 416.494 188.383 355.775 188.383 337.377C188.383 333.002 187.521 328.671 185.847 324.629C184.173 320.587 181.719 316.915 178.626 313.822C175.532 310.728 171.86 308.275 167.818 306.6C163.777 304.926 159.445 304.065 155.07 304.065V304.065ZM155.07 354.866C151.611 354.866 148.23 353.84 145.354 351.919C142.478 349.997 140.236 347.266 138.912 344.07C137.589 340.874 137.242 337.358 137.917 333.965C138.592 330.573 140.258 327.456 142.704 325.011C145.149 322.565 148.266 320.899 151.658 320.224C155.051 319.549 158.567 319.896 161.763 321.219C164.959 322.543 167.69 324.785 169.612 327.661C171.533 330.537 172.559 333.918 172.559 337.377C172.559 342.016 170.717 346.464 167.437 349.744C164.157 353.024 159.709 354.866 155.07 354.866V354.866Z" fill="#7FB0FE"/>
 </g>
-<g id="2ePoint">
+<g id="dePoint">
 <path id="Vector_21" d="M420.737 314.891C439.135 314.891 454.049 313.773 454.049 312.393C454.049 311.013 439.135 309.894 420.737 309.894C402.339 309.894 387.424 311.013 387.424 312.393C387.424 313.773 402.339 314.891 420.737 314.891Z" fill="#7FB0FE"/>
 <path id="Vector_22" d="M420.737 179.143C411.902 179.143 403.429 182.653 397.181 188.9C390.934 195.147 387.424 203.621 387.424 212.456C387.424 230.853 420.737 291.573 420.737 291.573C420.737 291.573 454.049 230.853 454.049 212.456C454.049 208.081 453.188 203.749 451.514 199.707C449.839 195.666 447.386 191.993 444.292 188.9C441.199 185.807 437.527 183.353 433.485 181.679C429.443 180.005 425.112 179.143 420.737 179.143V179.143ZM420.737 229.945C417.278 229.945 413.897 228.919 411.02 226.997C408.144 225.075 405.903 222.344 404.579 219.148C403.255 215.953 402.909 212.436 403.584 209.044C404.259 205.651 405.924 202.535 408.37 200.089C410.816 197.643 413.932 195.977 417.325 195.303C420.717 194.628 424.234 194.974 427.43 196.298C430.625 197.621 433.357 199.863 435.278 202.739C437.2 205.615 438.226 208.997 438.226 212.456C438.226 217.094 436.383 221.542 433.103 224.822C429.824 228.102 425.375 229.945 420.737 229.945V229.945Z" fill="#7FB0FE"/>
 </g>
-<g id="2ePoint_2">
+<g id="dePoint_2">
 <path id="Vector_23" d="M420.737 314.891C439.135 314.891 454.049 313.773 454.049 312.393C454.049 311.013 439.135 309.894 420.737 309.894C402.339 309.894 387.424 311.013 387.424 312.393C387.424 313.773 402.339 314.891 420.737 314.891Z" fill="#7FB0FE"/>
 <path id="Vector_24" d="M420.737 179.143C411.902 179.143 403.429 182.653 397.181 188.9C390.934 195.147 387.424 203.621 387.424 212.456C387.424 230.853 420.737 291.573 420.737 291.573C420.737 291.573 454.049 230.853 454.049 212.456C454.049 208.081 453.188 203.749 451.514 199.707C449.839 195.666 447.386 191.993 444.292 188.9C441.199 185.807 437.527 183.353 433.485 181.679C429.443 180.005 425.112 179.143 420.737 179.143V179.143ZM420.737 229.945C417.278 229.945 413.897 228.919 411.02 226.997C408.144 225.075 405.903 222.344 404.579 219.148C403.255 215.953 402.909 212.436 403.584 209.044C404.259 205.651 405.924 202.535 408.37 200.089C410.816 197.643 413.932 195.977 417.325 195.303C420.717 194.628 424.234 194.974 427.43 196.298C430.625 197.621 433.357 199.863 435.278 202.739C437.2 205.615 438.226 208.997 438.226 212.456C438.226 217.094 436.383 221.542 433.103 224.822C429.824 228.102 425.375 229.945 420.737 229.945V229.945Z" fill="#7FB0FE"/>
 </g>
-<g id="3ePoint">
+<g id="tePoint">
 <path id="Vector_25" d="M748.864 189.137C767.262 189.137 782.177 188.018 782.177 186.638C782.177 185.259 767.262 184.14 748.864 184.14C730.466 184.14 715.552 185.259 715.552 186.638C715.552 188.018 730.466 189.137 748.864 189.137Z" fill="#7FB0FE"/>
 <path id="Vector_26" d="M748.864 59.2183C744.49 59.2183 740.158 60.08 736.116 61.7541C732.075 63.4282 728.402 65.8819 725.309 68.9753C722.215 72.0686 719.762 75.741 718.088 79.7826C716.414 83.8243 715.552 88.1561 715.552 92.5307C715.552 110.929 748.864 171.648 748.864 171.648C748.864 171.648 782.177 110.929 782.177 92.5307C782.177 88.1561 781.315 83.8243 779.641 79.7826C777.967 75.741 775.513 72.0686 772.42 68.9753C769.326 65.8819 765.654 63.4282 761.612 61.7541C757.571 60.08 753.239 59.2183 748.864 59.2183V59.2183ZM748.864 110.02C745.405 110.02 742.024 108.994 739.148 107.072C736.272 105.151 734.03 102.419 732.707 99.2235C731.383 96.0278 731.037 92.5114 731.711 89.1188C732.386 85.7263 734.052 82.61 736.498 80.1642C738.944 77.7183 742.06 76.0526 745.452 75.3778C748.845 74.703 752.361 75.0493 755.557 76.373C758.753 77.6967 761.484 79.9383 763.406 82.8144C765.328 85.6904 766.353 89.0718 766.353 92.5308C766.353 97.1691 764.511 101.618 761.231 104.897C757.951 108.177 753.503 110.02 748.864 110.02V110.02Z" fill="#7FB0FE"/>
 </g>
@@ -280,8 +282,8 @@
                     <div>
                         <span class="span">2019</span>
                         <div class="content">
-                            <h3 class=" col-6 col-lg-10"> IUT Informatique de Lannion</h3>
-                            <p class=" col-6 col-lg-12">Etudiant à l'IUT de Lannion au département informatique en 1ere année.</p>
+                            <h3 class=" col-6 col-lg-10"> IUT de Lannion - <i>Lannion</i></h3>
+                            <p class=" col-6 col-lg-12">DUT Informatique 1ère année</p>
                         </div>
                     </div>
                 </li>
@@ -289,8 +291,8 @@
                     <div>
                         <span class="span">2016</span>
                         <div class="content">
-                            <h3 class=" col-6 col-lg-10">Lycée ensemble scolaire les Cordeliers</h3>
-                            <p class=" col-6 col-lg-12">Diplomé d'un baccalauréat mention S en série S spécialité SVT.</p>
+                            <h3 class=" col-6 col-lg-10">Lycée ensemble scolaire les Cordeliers - <i>Dinan</i></h3>
+                            <p class=" col-6 col-lg-12">Baccalauréat mention Bien en série S</p>
                         </div>
                     </div>
                 </li>
@@ -298,8 +300,8 @@
                     <div>
                         <span class="span">2013</span>
                         <div class="content">
-                            <h3 class="col-6 col-lg-10">Collège Notre dame de la Victoire</h3>
-                            <p class="col-6 col-lg-12">Diplomé d'un brevet des collèges mention bien.</p>
+                            <h3 class="col-6 col-lg-10">Collège Notre dame de la Victoire - <i>Dinan</i></h3>
+                            <p class="col-6 col-lg-12">Brevet des collèges mention bien.</p>
                         </div>
                     </div>
                 </li>
@@ -313,45 +315,126 @@
     <section>
     <h1 class="col-lg-3" id="competence">Compétences</h1>
         <div class="row col-lg-12 justify-content-center">
-            <div class="col-lg-4 crea">
+            <div class="col-lg-6 crea col-md-12">
                 <img src="images/Crea.png" class=" img-fluid col-lg-12">
                 <h1>Créatif</h1>
-                <p>hen using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
+                <p>Passionné par le <span class="mots">dessin</span> depuis 2 ans et le <span class="mots">design</span> de manière générale, je recherche le plus possible à me perfectionner et à me tenir au courant des derniers mouvements artistiques.</p>
             </div>
-            <div class="col-lg-4 develo">
+            <div class="col-lg-6 develo col-md-12">
                 <img src="images/dev.png" class="img-fluid col-lg-12 "  >
                     <h1>Developement</h1>
-                    <p>hen using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
+    
+                        <ul class="listeDev">
+                            <li>
+                                <span class="liFirst">web</span>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                </ul>
+                            </li>
+                            <li>
+                               <span class="liFirst">Programmation</span> 
+                                <ul>
+                                    <li>C</li>
+                                    <li>JAVA</li>
+                                    <li>Python</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="liFirst">BDD</span>
+                                <ul>
+                                    <li>SQL</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
                 <h1></h1>
             </div>
         </div>
                 <div class="row col-lg-12 justify-content-center">
-            <div class="col-lg-4 logi">
-                <img src="images/Logi.png" class=" img-fluid col-lg-12">
+            <div class="col-lg-6 logi col-md-12 ">
+                <img src="images/Logi.png" class=" img-fluid col-lg-12 ">
                   <h1>Logiciel</h1>
-                    <p>hen using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
+                  
+                  <ul class="listeDev ">
+                    <li>
+                        <span class="liFirst">web</span>
+                        <ul>
+                            <li>Visual Studio</li>
+                            <li>Bracket</li>
+                        </ul>
+                    </li>
+                    <li>
+                       <span class="liFirst">Programmation</span> 
+                        <ul>
+                            <li>Spyder</li>
+                            <li>Eclipse</li>
+                            <li>Visual Studio</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="liFirst">Création</span>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Affinity Photo</li>
+                            <li>Clip Studio</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="col-lg-4 soft ">
+            <div class="col-lg-6 soft col-md-12 ">
                 <img src="images/soft.png" class="img-fluid col-lg-12 "  >
                     <h1>SoftSkills</h1>
-                    <p>hen using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
+                    <p><span class="mots">Motivé</span> et <span class="mots">persévérant</span> j'essaie de faire de mon mieux dans ce que j'entreprends. 
+                        De bonne humeur toujours prêt à rendre service ! </p>
             </div>
+
         </div>
     </section>
     <section>
     <h1 class="offset-lg-9 col-lg-3" id="projet"> Mes projets</h1>
-    <div class="row justify-content-center">
-        <div class="col-lg-3">
-            <img src="images/regionouestLogo.png" class="img-fluid img-thumbnail offset-lg-2" width="200" height="200">
-            <p>When using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
+    <div class="row justify-content-center projet ">
+        <div class="col-lg-3 region">
+            <div class="row">
+                <img src="images/regionouestLogo.png" class="img-fluid img-thumbnail offset-lg-2" width="200" height="200">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                   
+                </ul>
+            </div>
+            <p>Région Ouest est un site web réalisé sur le théme de l'impact de l'informatique dans le monde Hospitalier. Sur ce site vous pourrez retrouver la gestion des patients, l'IA dans les hopitaux ou encore la sécurité de nos données dans les hopitaux.<a href="#" class="plus align-self-baseline">+</a></p>
+           
         </div>    
-        <div class="offset-lg-1 col-lg-3">
-            <img src="images/LOGOSPACE1.png" class="img-fluid img-thumbnail" width="200" height="200">
-            <p>When using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
+        <div class="offset-lg-1 col-lg-3 space">
+            <div class="row">
+                <img src="images/LOGOSPACE1.png" class="img-fluid img-thumbnail" width="200" height="200">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                   
+                </ul>
+            </div>
+           
+            <p>OriginTour est un site web pour une compagnie spatiale fictive. Le site est intégralement en anglais. On y retrouve la présentation des voyages, de la fusée ainsi que des différents membres de la compagnie. <a href="https://github.com/t0hmi/RegionOuest" class="plus align-self-baseline">+</a></p>
+            
+            
         </div>     
-        <div class="offset-lg-1 col-lg-3">
-            <img src="images/logoTH.png" class="img-fluid img-thumbnail" width="200" height="200">
-            <p>When using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
+        <div class="offset-lg-1 col-lg-3 th">
+            <div class="row ">
+                <img src="images/todo.png" class="img-fluid img-thumbnail" width="200" height="200">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    
+                </ul>
+            </div>
+           
+            <p>Création d'une todoList en utilisant JavaScript, avec des fonctionalités simples comme le tri des tâches effectuées, la possibilité de supprimer des tâches ainsi que des messages d'erreurs.<a href="https://github.com/t0hmi/TodoList" class="plus align-self-baseline">+</a></p>
+           
         </div>    
         
     </div>
@@ -366,14 +449,20 @@
     <footer>
         <div class="col-lg-6 offset-lg-3" >
            <p >Suivez moi : </p>
-            <div class="row">
-                
+            <div class="row justify-content-center">
+              <a href="https://www.freecodecamp.org/tohmi">  <i class="fab fa-free-code-camp"></i> </a>
+               <a href="https://www.linkedin.com/in/thomas-hamon-01b1031a8/"> <i class="fab fa-linkedin"></i> </a>
+                <a href="https://github.com/t0hmi"> <i class="fab fa-github"></i> </a>  
+                <a href="mailto:thomashamon@hotmail.fr"> <i class="fas fa-envelope"></i> </a>
+
             </div>
         </div>
         <div>
         <p class="col-lg-3 offset-lg-5">@Copyright - 2020 - HAMON Thomas</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
     </body>
     
 </html>

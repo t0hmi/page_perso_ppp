@@ -1,430 +1,580 @@
 /*---- POLICE ----*/
 
-
-
-html{
- overflow-x: hidden;   
- scroll-behavior: smooth;
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /*------ HEADER --------*/
-
-header{
- background-color: rgb(127,176,254);
-width: 100%;
-}
-.nav-item{
- margin: 1em;
-    width: 8em;
+body {
+  font-family: "Montserrat", sans-serif !important;
 }
 
-nav .navbar-nav li a{
-  color: white ;
-  }
+header {
+  background-color: rgb(127, 176, 254);
+  width: 100%;
+}
+.nav-item {
+  margin: 1em;
+  width: 8em;
+}
 
-nav .navbar-nav li{
-    
-    font-size: 1.3em;
-    text-align: center;
-  }
-.nav-link{
-    border: solid rgb(127,176,254) 2px ;
-    border-radius: 15px;
-    
-   
+nav .navbar-nav li a {
+  color: white;
 }
-header button{
-    background-color: rgb(127,176,254);
-    border: none;
+
+nav .navbar-nav li {
+  font-size: 1.3em;
+  text-align: center;
 }
-.nav-link:hover{
-    
-    animation-duration: 1s;
-    animation-name: animationHeader;
-    animation-fill-mode: forwards;
+.nav-link {
+  border: solid rgb(127, 176, 254) 2px;
+  border-radius: 15px;
+}
+header button {
+  background-color: rgb(127, 176, 254);
+  border: none;
+}
+.nav-link:hover {
+  animation-duration: 1s;
+  animation-name: animationHeader;
+  animation-fill-mode: forwards;
 }
 /*------ ACCEUIL -----------*/
-.bienvenue h1{
- font-size: 6em;
+.bienvenue h1 {
+  font-size: 6em;
 }
-.bienvenue h2{
- font-size: 3em;   
+.bienvenue h2 {
+  font-size: 3em;
 }
-.bienvenue h3{
- font-size: 2em;   
+.bienvenue h3 {
+  font-size: 2em;
 }
-.bienvenue h1,h2,h3{
-    text-align: center;
+.bienvenue h1,
+h2,
+h3 {
+  text-align: center;
 }
 
-.bienvenue #btn{
-    margin: 3em; 
-    padding: 1em;
-    border-radius: 5px;
-    background: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
-    color: white;
+.bienvenue #btn {
+  margin: 3em;
+  padding: 1em;
+  border-radius: 5px;
+  background: linear-gradient(to left, rgb(108, 70, 200), rgb(108, 176, 255));
+  color: white;
 }
-.bienvenue #btn a{
-    display: block;
- text-decoration: none;
- color: white;
-    height: 100%;
-    width: 100%;
-
+.bienvenue #btn a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
 }
-.bienvenue #btn:hover{
-       
-    animation-duration: 1s;
-    animation-name: animationButton;
-    animation-fill-mode: forwards;
-    }
+.bienvenue #btn:hover {
+  animation-duration: 1s;
+  animation-name: animationButton;
+  animation-fill-mode: forwards;
+}
 
 .bienvenue #btn:hover a {
- text-decoration: none;
-    text-shadow: 5px 5px 10px black;
+  text-decoration: none;
+  text-shadow: 5px 5px 10px black;
 }
-.bienvenue #btn a:active{
-    opacity: 0.5;
-    text-decoration: underline;
+.bienvenue #btn a:active {
+  opacity: 0.5;
+  text-decoration: underline;
 }
 /*------ QUI SUIS-JE ---------*/
-section{
- margin-top: 4em;
-
+section {
+  margin-top: 4em;
 }
-section:nth-child(3) svg{
- margin-right: 1em;   
+section:nth-child(3) svg {
+  margin-right: 1em;
 }
-section>h1{
- margin-bottom: 2em;
-    padding: 5px;
-    border-bottom: rgb(127,176,254) solid 3px;
-    text-align: center;
+section > h1 {
+  margin-bottom: 2em;
+  padding: 5px;
+  font-size: 4em;
+  text-align: center;
 }
-.quiSuisJe div:first-child{
-    background:   linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
-    box-shadow: #000000  0 5px 10px;
-
+section > h1:after {
+  content: " ";
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  right: 0.5em;
+  top: -0.6em;
+  opacity: 0.2;
+  z-index: -1;
+  clip-path: circle();
+  background-color: rgb(108, 176, 255);
 }
-
-.quiSuisJe div:first-child p{
- padding: 1.5em;
- font-size: 1.5em;
-
-}
-
-.quiSuisJe div:first-child p span{
-    display: block;
- text-align: center;
-    margin-top: 1em;
-    color: white;
-    font-weight: 500;
-    text-shadow: 1px 1px 5px black;
-}
-.quiSuisJe div:first-child p span a:visited, .quiSuisJe div:first-child p span a:link {
-    text-decoration: none;
-    
-    color: white;
-    margin:1em;
-
-    
-    
-}
-.quiSuisJe div:first-child p span a:hover{
-    color: black;
+.quiSuisJe div:first-child {
+  background: linear-gradient(to left, rgb(108, 70, 200), rgb(108, 176, 255));
+  box-shadow: #000000 0 5px 10px;
 }
 
-#LIGNE1,#LIGNE2,#LIGNE3,#LIGNE4,#LIGNE5,#LIGNE6,#LIGNE7,#LIGNE8,#LIGNE9,#LIGNE10,#LIGNE11{
-    opacity: 0;
-    animation-duration: 0.5s;
-    animation-name: animSvg;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    
-    
-}
-#LIGNE1{
-    animation-delay: 0.5s;
-}
-#LIGNE2{
-    animation-delay: 1s;   
-}
-#LIGNE3{
-    animation-delay: 1.5s;   
-}
-#LIGNE4{
-    animation-delay: 2s;
-}
-#LIGNE5{
-    animation-delay: 2.5s;   
-}
-#LIGNE6{
-    animation-delay: 3s;   
-}
-#LIGNE7{
-    animation-delay: 3.5s;
-}
-#LIGNE8{
-    animation-delay: 4s;   
-}
-#LIGNE9{
-    animation-delay: 4.5s;   
-}
-#LIGNE10{
-    animation-delay: 5s;
-}
-#LIGNE11{
-    animation-delay: 5.5s;   
+.quiSuisJe div:first-child p {
+  padding: 1.5em;
+  font-size: 1.5em;
 }
 
+.quiSuisJe div:first-child p span {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px black;
+}
+.quiSuisJe div:first-child p span a:visited,
+.quiSuisJe div:first-child p span a:link {
+  text-decoration: none;
+
+  color: white;
+  margin: 1em;
+}
+.quiSuisJe div:first-child p span a:hover {
+  color: black;
+}
+
+#LIGNE1,
+#LIGNE2,
+#LIGNE3,
+#LIGNE4,
+#LIGNE5,
+#LIGNE6,
+#LIGNE7,
+#LIGNE8,
+#LIGNE9,
+#LIGNE10,
+#LIGNE11 {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-name: animSvg;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+#LIGNE1 {
+  animation-delay: 0.5s;
+}
+#LIGNE2 {
+  animation-delay: 1s;
+}
+#LIGNE3 {
+  animation-delay: 1.5s;
+}
+#LIGNE4 {
+  animation-delay: 2s;
+}
+#LIGNE5 {
+  animation-delay: 2.5s;
+}
+#LIGNE6 {
+  animation-delay: 3s;
+}
+#LIGNE7 {
+  animation-delay: 3.5s;
+}
+#LIGNE8 {
+  animation-delay: 4s;
+}
+#LIGNE9 {
+  animation-delay: 4.5s;
+}
+#LIGNE10 {
+  animation-delay: 5s;
+}
+#LIGNE11 {
+  animation-delay: 5.5s;
+}
 
 /*------- MON PARCOURS -----*/
-section:nth-child(4){
- margin-top: 6em;   
+section:nth-child(4) {
+  margin-top: 6em;
 }
-section:nth-child(4) svg{
- margin-left: 1em;   
-}
-
-.conteneur{
-        
-     background:   linear-gradient(to right, rgb(108,70,200), rgb(108,176,255) );
-    box-shadow: #000000  0 5px 10px;
-}
-.timeline
-{
-    position: relative;
-    top: 4em;
-    width: 800px;
-    height: auto;
-    box-sizing: border-box;
+section:nth-child(4) svg {
+  margin-left: 1em;
 }
 
-.timeline .liTime
-{
-    position:relative;
-    list-style: none;
-    margin-top: 0px;
+.conteneur {
+  background: linear-gradient(to right, rgb(108, 70, 200), rgb(108, 176, 255));
+  box-shadow: #000000 0 5px 10px;
 }
-.content
-{
-    position: relative;
-    min-height: 60px;
-    padding: 0 20px 20px 30px;
-    height: 200px;
-    border-left-style: solid;
-    border-left-color: black;
-    border-left-width: 2px;
-}
-.content h3{
- color: white; 
- text-align: left;
-text-shadow: 4px 4px 4px black;   
+.timeline {
+  position: relative;
+  top: 4em;
+  width: 800px;
+  height: auto;
+  box-sizing: border-box;
 }
 
-.content p{
- font-size: 1.5em;     
+.timeline .liTime {
+  position: relative;
+  list-style: none;
+  margin-top: 0px;
 }
-.timeline .liTime:last-child .content
-{
-    border-left: 2px solid transparent;
+.content {
+  position: relative;
+  min-height: 60px;
+  padding: 0 20px 20px 30px;
+  height: 200px;
+  border-left-style: solid;
+  border-left-color: black;
+  border-left-width: 2px;
 }
-.span
-{
-    margin-top: 0px;
-    position: absolute;
-    top: -8px;
-    left: -20px;  
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: black;
-    border-radius: 50%;
-    z-index: 10;
-    font-size: 0.9em;
-    font-weight: bold;
-    color: rgb(108,176,255);
+.content h3 {
+  color: white;
+  text-align: left;
+  text-shadow: 4px 4px 4px black;
 }
 
-.liTime:hover .span
-{
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(127,176,254);
-    color: black;
-    box-shadow: rgb(127,176,254) 0 0 30px;
-
+.content p {
+  font-size: 1.5em;
+}
+.timeline .liTime:last-child .content {
+  border-left: 2px solid transparent;
+}
+.span {
+  margin-top: 0px;
+  position: absolute;
+  top: -8px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 10;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgb(108, 176, 255);
 }
 
+.liTime:hover .span {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(127, 176, 254);
+  color: black;
+  box-shadow: rgb(127, 176, 254) 0 0 30px;
+}
 
+#perTrait,
+#trait3,
+#perPoint,
+#dePoint,
+#dePoint_2,
+#tePoint {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-name: animSvg;
+  animation-fill-mode: forwards;
+}
 
+#perPoint {
+  animation-delay: 0s;
+}
+#perTrait {
+  animation-delay: 0.5s;
+}
+#dePoint {
+  animation-delay: 1s;
+}
+#dePoint_2 {
+  animation-delay: 1.5s;
+}
+#tePoint {
+  animation-delay: 2.5s;
+}
+#trait3 {
+  animation-delay: 2s;
+}
 
 /*-------- COMPETENCES ------------*/
-section:nth-child(5){
- margin-top: 4em;   
+section:nth-child(5) {
+  margin-top: 4em;
 }
-.develo img,.crea img, .soft img, .logi img{
- position: relative;
+.develo img,
+.crea img,
+.soft img,
+.logi img {
+  position: relative;
 }
-.develo p,.crea p,.soft p, .logi p{
-   font-weight: 500;
+.develo,
+.crea,
+.soft,
+.logi {
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding-right: 3rem;
 }
-.crea h1{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-      font-size: 2em;  
-    color: white;
-    text-shadow: 4px 4px 5px black;
+.crea h1 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-size: 2em;
+  color: white;
+  text-shadow: 4px 4px 5px black;
 }
-.crea p{
-      position: absolute;
-    top: 40%;
-    left: 25%;
-    padding-right: 10em;  
+.crea p {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  padding-right: 9em;
 }
-
-
-
-.develo h1{
- position: absolute;
-    top:25%;
-    left: 25%;
-    font-size: 2em;  
-    color: white;
-    text-shadow: 4px 4px 5px black;
+.mots {
+  color: white;
+  background: rgb(108, 70, 200);
+  padding: 0.5rem;
+  box-shadow: rgb(108, 70, 200) 0px 0px 15px -2px;
+  border-radius: 25px;
 }
-.develo  p{
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    padding-right: 10em;
-}
-.soft h1{
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    font-size: 2em;  
-    color: white;
-    text-shadow: 4px 4px 5px black;
-}
-.soft p{
-    position: absolute;
-    top: 35%;
-    left: 20%;
-     padding-right: 9em;
+.develo h1 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-size: 2em;
+  color: white;
+  text-shadow: 4px 4px 5px black;
 }
 
-.logi h1{
- position: absolute;
-    top: 20%;
-    left: 25%;
-     font-size: 2em;  
-    color: white;
-    text-shadow: 4px 4px 5px black;
+.develo .listeDev {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  list-style: none;
+}
+.listeDev {
+  font-size: 0.9;
+}
+.listeDev ul {
+  margin-bottom: 1em;
+}
+.listeDev li {
+  display: inline;
+  font-size: 1em;
+  margin: 0.5em;
 }
 
-.logi p{
- position: absolute;
-    top: 35%;
-    left: 25%;
-    padding-right: 9em;
+.liFirst {
+  background-color: rgb(127, 176, 254);
+  box-shadow: white 0px 0px 10px -5px;
+  padding: 0.3em;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.soft h1 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-size: 2em;
+  color: white;
+  text-shadow: 4px 4px 5px black;
+}
+.soft p {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  padding-right: 9em;
+}
+
+.logi h1 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-size: 2em;
+  color: white;
+  text-shadow: 4px 4px 5px black;
+}
+
+.logi .listeDev {
+  position: absolute;
+  top: 35%;
+  left: 15%;
 }
 /*---------- PROJET ------------*/
-section:nth-child(6){
-    margin-top: 4em;
-   
+section:nth-child(6) {
+  margin-top: 4em;
 }
-section:nth-child(6) .row{
-    margin-top: 2em;
-     background-image: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
-    padding: 2em;   
+section:nth-child(6) .projet {
+  margin-top: 2em;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(108, 70, 200),
+    rgb(108, 176, 255)
+  );
+  padding: 2em;
 }
-section:nth-child(6) .row div img{
- margin: 1em;
-display: block;
-
-}
-
-
-/*----------- FOOTER ------------*/ 
-footer{
-    height: 100%;
-}
-footer div:first-child{
-    height: 15em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-   background: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) ); 
-}
-footer div:last-child{
-    height: 4em;
-    margin-top: 2em;
-
-}
-footer div:first-child>p{
-    text-align: center;
-
-}
-    
-
-footer div:last-child p{
-    color: black;
-    font-weight: bold;
-    padding-top: 1em;
+section:nth-child(6) .row div img {
+  margin: 1em;
+  display: block;
 }
 
+section:nth-child(6) ul > li {
+  list-style: none;
+  background-color: white;
+  margin: 1em;
+  padding: 0.5em;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: rgb(108, 176, 255) 0px 0px 20px -5px;
+  font-weight: bold;
+}
+.plus {
+  padding-top: 0.1em;
+  padding-bottom: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 2em;
+  background-color: white;
+  font-weight: bold;
+  box-shadow: rgb(108, 70, 200) 0px 0px 20px -2px;
+  border-radius: 20px;
+}
+.plus:hover {
+  text-decoration: none;
+}
+/*----------- FOOTER ------------*/
+footer {
+  height: 100%;
+}
+footer div:first-child {
+  height: 15em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background: linear-gradient(to top, rgb(108, 70, 200), rgb(108, 176, 255));
+}
+footer div:last-child {
+  height: 4em;
+  margin-top: 2em;
+}
+footer div:first-child > p {
+  text-align: center;
+  padding-top: 1em;
+  color: white;
+  text-shadow: 4px 4px 5px black;
+  font-size: 2em;
+}
+
+footer div:last-child p {
+  color: black;
+  font-weight: bold;
+  padding-top: 1em;
+}
+footer i {
+  font-size: 4em;
+  color: black;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+footer i:hover {
+  color: white;
+  text-shadow: black 0px 0px 10px;
+}
 /*--------------------------------------*/
-@keyframes animSvg{
- from{
-     opacity: 0;
-     
- }to{
-     opacity: 1;
- }  
+@keyframes animSvg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-@keyframes animationButton{
-    from{
-            background: linear-gradient(to left, rgb(108,70,200), rgb(108,176,255) );
-    }to{
-            background:rgb(108,176,255);
-        
-    }
-}
-
-
-@keyframes animationHeader{
- from{
-     border-color: rgb(127,176,254);
-     color: white;
-    background-color: rgb(127,176,254);
- 
- }
-    to{
-   
-        color: rgb(127,176,254);
-        background-color: white;
-    }
+@keyframes animationButton {
+  from {
+    background: linear-gradient(to left, rgb(108, 70, 200), rgb(108, 176, 255));
+  }
+  to {
+    background: rgb(108, 176, 255);
+  }
 }
 
-
-
-
-
+@keyframes animationHeader {
+  from {
+    border-color: rgb(127, 176, 254);
+    color: white;
+    background-color: rgb(127, 176, 254);
+  }
+  to {
+    color: rgb(127, 176, 254);
+    background-color: white;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .develo,
+  .crea,
+  .soft,
+  .logi {
+    font-size: 1rem;
+    padding-right: 3rem;
+  }
+  .crea p {
+    padding-right: 7em;
+  }
+  .bienvenue {
+    font-size: 0.8em;
+  }
+}
 @media screen and (max-width: 990px) {
-    .nav-link:hover{
+  .nav-link:hover {
     animation: none;
-}   
-    nav .navbar-nav li{
-        text-align: left;
-    }  
-    
-    .develo p,.crea p,.soft p, .logi p{
-        padding-right: 7em;
-        font-size: 0.8em;
-}
-}
+  }
+  nav .navbar-nav li {
+    text-align: left;
+  }
 
+  .crea p,
+  .soft p,
+  .logi p {
+    padding-right: 7.5em;
+    font-size: 1.5em;
+  }
+  .listeDev {
+    font-size: 1.2em;
+  }
+  footer div p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  .crea p,
+  .soft p {
+    font-size: 1em;
+    line-height: 1.5rem;
+  }
+  footer i {
+    font-size: 3em;
+  }
+  .listeDev {
+    font-size: 0.7em;
+  }
+  .develo,
+  .crea,
+  .soft,
+  .logi {
+    font-weight: bolder;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .crea p,
+  .soft p {
+    padding-right: 8em;
+    font-size: 0.8em;
+  }
 
+  .develo,
+  .crea,
+  .soft,
+  .logi {
+    font-weight: bolder;
+    line-height: 1.5rem;
+  }
+
+  .bienvenue {
+    font-size: 0.5em;
+  }
+}
