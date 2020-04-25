@@ -556,7 +556,7 @@ footer i:hover {
   .soft,
   .logi {
     font-weight: bolder;
-    line-height: 4rem;
+    line-height: 1rem;
   }
 }
 @media screen and (max-width: 540px) {
